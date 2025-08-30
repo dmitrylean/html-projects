@@ -1,0 +1,1216 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Service</title>
+  <meta name="description" content="Краткое описание страницы с ключевыми словами" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">Автосервис</div>
+
+      <button class="burger" id="openMenu" aria-label="Открыть меню">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <button class="close" id="closeMenu" aria-label="Закрыть меню">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="nav" id="menu">
+        <a href="#company">О компании</a>
+        <a href="#news">Новости</a>
+        <a href="#support">Помощь</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Автосервис<br />в вашем городе</h1>
+            <p>
+              Мы — онлайн-университет, обучающий веб-дизайну с гарантированным
+              трудоустройством
+            </p>
+          </div>
+          <form class="hero-form">
+            <h3>
+              Запишитесь на бесплатную диагностику подвески прямо сейчас
+            </h3>
+            <input type="text" placeholder="Ваше имя" (обязательно) />
+            <input type="tel" placeholder="Контактный телефон" (обязательно) />
+            <input type="text" placeholder="Марка автомобиля" />
+            <button type="submit">Отправить заявку</button>
+            <small>Акция действует до 10.01.2023</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__container">
+        <div class="about__text">
+          <h4 class="about__subtitle">О компании</h4>
+          <h1 class="about__title">Честный ремонт<br />автомобилей</h1>
+          <p class="about__description">
+            Диагностика, техническое обслуживание, шиномонтаж, кузовной и
+            малярный ремонт любой сложности.
+          </p>
+          <p class="about__description">
+            Максимально быстро. Профессионально и бережно. Без обмана и
+            непредвиденных расходов. С максимальным вниманием к вашей
+            проблеме.
+          </p>
+          <a href="#" class="about__btn">Подробнее</a>
+        </div>
+        <div class="about__images">
+          <div class="about__circle about__circle--top">
+            <img src="./img/about_1.png" alt="ремонт автомобиля" />
+          </div>
+          <div class="about__circle about__circle--bottom">
+            <img src="./img/about_2.png" alt="инструменты" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="repair">
+      <div class="repair__overlay">
+        <div class="repair__container">
+          <h2 class="repair__title">Мы ремонтируем всё</h2>
+          <p class="repair__subtitle">
+            Наши возможности и габариты позволяют нам ремонтировать даже
+            бронетехнику.
+          </p>
+
+          <div class="repair__grid">
+            <div class="repair__item">
+              <div class="repair__icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3 class="repair__label">Ремонтная зона</h3>
+              <p class="repair__desc">Площадь ремонта 1000 м²</p>
+            </div>
+
+            <div class="repair__item">
+              <div class="repair__icon">📁</div>
+              <h3 class="repair__label">Склад</h3>
+              <p class="repair__desc">Собственный склад запасных частей</p>
+            </div>
+
+            <div class="repair__item">
+              <div class="repair__icon">📄</div>
+              <h3 class="repair__label">10 постов</h3>
+              <p class="repair__desc">10 постов ремонта</p>
+            </div>
+
+            <div class="repair__item">
+              <div class="repair__icon">%</div>
+              <h3 class="repair__label">Развал-схождение</h3>
+              <p class="repair__desc">
+                Четырехстоечный подъемник для развала-схождения и подъема
+                крупногабаритных автомобилей
+              </p>
+            </div>
+
+            <div class="repair__item">
+              <div class="repair__icon">%</div>
+              <h3 class="repair__label">4 цеха</h3>
+              <p class="repair__desc">
+                металлообработка, кузовной ремонт, покраска и укрепление
+              </p>
+            </div>
+
+            <div class="repair__item">
+              <div class="repair__icon">%</div>
+              <h3 class="repair__label">Специалисты</h3>
+              <p class="repair__desc">
+                18 специалистов с высокой квалификацией
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="quote_block container">
+        <img src="./img/quote.png" alt="quote" />
+        <blockquote>
+          Наш сертифицированный автосервис предоставляет гарантию на 1 год.
+        </blockquote>
+        <p>— Иван Иванов, директор</p>
+      </div>
+    </section>
+    <section class="frame">
+      <div class="frame-wrapper">
+        <img src="./img/car.png" alt="frame image" />
+      </div>
+    </section>
+    <section class="certificate">
+      <div class="container">
+        <div class="certificate_block">
+          <div class="certificate_text">
+            <h2>Наши сертификаты</h2>
+            <p>
+              Мы предоставляем высококачественные услуги, и вы можете
+              ознакомиться с нашими сертификатами, которые подтверждают наши
+              гарантии и специфику выполняемых работ.
+            </p>
+          </div>
+          <div class="certificate_img">
+            <img src="./img/Light.png" alt="certificate 1" />
+            <img src="./img/Light-1.png" alt="certificate 2" />
+            <img src="./img/Light-2.png" alt="certificate 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <h4 class="team__subtitle">Команда</h4>
+      <h2 class="team__title">Кто мы?</h2>
+      <p class="team__desc">
+        Наша команда собрана исключительно из профессионалов своего дела,
+        которые работаю на ваше благо
+      </p>
+
+      <div class="team__list">
+        <div class="team__item">
+          <img src="./img/team_1.png" alt="Имя Фамилия" class="team__avatar" />
+          <h3 class="team__name">Имя</h3>
+          <p class="team__role">Ремонт кузова</p>
+        </div>
+        <div class="team__item">
+          <img src="./img/team_2.png" alt="Имя Фамилия" class="team__avatar" />
+          <h3 class="team__name">Имя</h3>
+          <p class="team__role">Ремонт двигателя</p>
+        </div>
+        <div class="team__item">
+          <img src="./img/team_3.png" alt="Имя Фамилия" class="team__avatar" />
+          <h3 class="team__name">Имя</h3>
+          <p class="team__role">Исправление блокировки</p>
+        </div>
+        <div class="team__item">
+          <img src="./img/team_4.png" alt="Имя Фамилия" class="team__avatar" />
+          <h3 class="team__name">Имя</h3>
+          <p class="team__role">Администратор</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-block">
+      <h2>Проблема с автомобилем? Мы поможем!</h2>
+      <form class="contact-form">
+        <input type="tel" placeholder="+7 (000) 000-0000" required />
+        <button type="submit">Написать нам</button>
+      </form>
+      <p class="contact-note">
+        Отправляя запрос, вы соглашаетесь на
+        <a href="#">обработку персональных данных</a>
+        и с <a href="#">условиями бронирования счета</a>
+      </p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer-left">
+        <p>© 2020 Car Service</p>
+        <p>
+          Design by
+          <a href="https://www.figma.com/design/21sqAicmOxEWbIfxXQbGEK/%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81?node-id=463-0&t=rA7tfU1hxvBflwMv-1"
+            target="_blank" rel="noopener noreferrer">Figma Designer</a>
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <ul>
+          <li><a href="#">О Компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="footer__contacts">
+          <p>+7 495 123-45-67</p>
+          <p>name@company.ru</p>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <a href="#"><img src="./svg/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="./svg/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="./svg/twitter.svg" alt="Twitter" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<style>
+  html,
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgba(255, 255, 255, 1);
+
+    font-family: "Stem";
+    font-style: normal;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400px;
+    margin-bottom: 12px;
+
+    color: #403e3b;
+  }
+
+  svg {
+    color: black;
+  }
+
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px;
+    background-color: #ffffff;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .logo span {
+    color: #333;
+    font-weight: normal;
+  }
+
+  .nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1, 5rem;
+  }
+
+  /* Burger */
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  .burger,
+  .close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger img,
+  .close img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 0;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Hero section */
+
+  .hero {
+    background: url("./img/hero.png") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-text {
+    color: white;
+    max-width: 500px;
+  }
+
+  .hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .hero-text p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: white;
+  }
+
+  .hero-form {
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-form h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .hero-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .hero-form button {
+    padding: 12px;
+    background-color: #f24b6a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .hero-form button:hover {
+    background-color: #d93f5b;
+  }
+
+  .hero-form small {
+    font-size: 0.75rem;
+    color: #777;
+  }
+
+  /* About */
+
+  .about {
+    background: #fff;
+    padding: 60px 20px;
+  }
+
+  .about__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .about__text {
+    max-width: 500px;
+    flex: 1 1 300px;
+  }
+
+  .about__subtitle {
+    color: #0080c0;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .about__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .about__btn {
+    display: inline-block;
+    background-color: #ff4d7e;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+
+  .about__btn:hover {
+    background-color: #e63963;
+  }
+
+  .about__images {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex: 1 1 300px;
+  }
+
+  .about__circle {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .about__circle--top {
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 160px;
+  }
+
+  .about__circle--bottom {
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+  }
+
+  .about__circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Frame */
+
+  .frame {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .frame-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .frame-wrapper img {
+    width: 1920px;
+    max-width: none;
+    height: auto;
+  }
+
+  /* Reapir */
+
+  .repair {
+    background-image: url("./img/repair.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+  }
+
+  .repair__overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 80px 20px;
+  }
+
+  .repair__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .repair__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .repair__subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ddd;
+  }
+
+  .repair__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .repair__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .repair__icon {
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .repair__label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .repair__desc {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  /* Quote */
+
+  .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 627px;
+  }
+
+  .quote_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 95px;
+    gap: 10px;
+
+    width: 1109px;
+    height: 427px;
+
+    background: #f7f8fa;
+    border-radius: 24px;
+  }
+
+  .quote_block blockquote {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 54px;
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .quote_block p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Certificate */
+
+  .certificate {
+    width: 100%;
+    height: 509px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certificate_block {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certificate_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 24px;
+  }
+
+  .certificate_text h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+
+    color: #000000;
+  }
+
+  .certificate_text p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .certificate_img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  /* Team */
+
+  .team {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+  }
+
+  .team__subtitle {
+    color: #007acc;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .team__title {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .team__desc {
+    margin: 20px 0 50px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .team__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .team__item {
+    width: 180px;
+  }
+
+  .team__avatar {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .team__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .team__role {
+    font-size: 16px;
+    color: #666;
+  }
+
+  /* Contact */
+
+  .contact-block {
+    background: #1180a3;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .contact-block h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input {
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    min-width: 250px;
+  }
+
+  .contact-form button {
+    background: #f54d70;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .contact-note {
+    color: #dceff6;
+    font-size: 14px;
+  }
+
+  .contact-note a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* Footer */
+
+  .footer {
+    background: #063641;
+    color: #c0e3eb;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+
+  .footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer__top p {
+    color: white;
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__links a {
+    color: #c0e3eb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts p {
+    margin: 0 0 10px;
+    color: white;
+  }
+
+  .footer__socials a {
+    margin-left: 10px;
+  }
+
+  .footer__socials img {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 6px;
+  }
+
+  .footer-credits {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .footer-credits a {
+    color: inherit;
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+
+    /* Header */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+    }
+
+    .burger {
+      display: flex;
+    }
+
+    .close {
+      display: none;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      right: -240px;
+      height: 100%;
+      width: 250px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 60px 20px 20px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .nav a {
+      margin: 15px 0;
+      font-size: 18px;
+      color: black;
+    }
+
+    .nav.active {
+      right: 0;
+    }
+
+    .nav.active~.close {
+      display: flex;
+    }
+
+    .nav.active~.burger {
+      display: none;
+    }
+
+    /* Hero */
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .hero-form {
+      width: 100%;
+    }
+
+    /* About */
+    .about__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .about__images {
+      margin-top: 30px;
+      width: 100%;
+      height: 250px;
+    }
+
+    .about__circle--top {
+      width: 130px;
+      height: 130px;
+      top: 0;
+      right: 0;
+    }
+
+    .about__circle--bottom {
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* Team */
+    .team__list {
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .team__item {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    /* Contact */
+    .contact-form {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    /* Footer */
+    .footer__top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer__links {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer__contacts {
+      text-align: center;
+    }
+
+    .footer__socials {
+      margin-top: 20px;
+    }
+
+    .footer__socials a {
+      margin: 10px 5px 0;
+    }
+
+    .footer-credits {
+      margin-top: 24px;
+      font-size: 13px;
+    }
+
+    /* Quote */
+
+    .quote {
+      height: auto;
+      padding: 40px 20px;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .quote_block {
+      text-align: center;
+      gap: 15px;
+    }
+
+    .quote_block blockquote {
+      font-size: 32px;
+      line-height: 1.3;
+    }
+
+    .quote_block p {
+      font-size: 18px;
+    }
+
+    .certificate {
+      height: auto;
+      padding: 40px 20px;
+    }
+
+    .certificate_block {
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .certificate_text h2 {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .certificate_text p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .certificate_img {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .certificate_img img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about__title {
+      font-size: 24px;
+    }
+
+    .about__description {
+      font-size: 15px;
+    }
+
+    .about__images {
+      height: 200px;
+    }
+
+    .about__circle--top {
+      width: 100px;
+      height: 100px;
+    }
+
+    .about__circle--bottom {
+      width: 120px;
+      height: 120px;
+    }
+
+    .repair__title {
+      font-size: 24px;
+    }
+
+    .repair__subtitle {
+      font-size: 14px;
+    }
+
+    .repair__icon {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+
+    .repair__label {
+      font-size: 15px;
+    }
+
+    .repair__desc {
+      font-size: 12px;
+    }
+
+    .nav a {
+      font-size: 15px;
+    }
+
+    .quote {
+      justify-content: center;
+    }
+
+    .quote_block {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .quote_block blockquote {
+      font-size: 24px;
+    }
+
+    .quote_block p {
+      font-size: 16px;
+    }
+  }
+</style>
