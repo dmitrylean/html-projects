@@ -1,0 +1,114 @@
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Averta CY', sans-serif;
+  color: #ffffff;
+  background: #111;
+  scroll-behavior: smooth;
+}
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: 'Nunito Sans';
+  font-weight: 800;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+}
+
+/* === PROJECTS === */
+
+.projects {
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.projects-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #222;
+  color: #00e5ff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 3px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #00e5ff;
+}
