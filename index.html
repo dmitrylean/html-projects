@@ -1,213 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HTML Projects</title>
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      const storedLang = localStorage.getItem("preferredLang");
 
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+      const pathname = window.location.pathname;
+      const isAlreadyLocalized =
+        pathname.startsWith("/ru") || pathname.startsWith("/en");
+
+      if (storedLang && !isAlreadyLocalized) {
+        window.location.href = "/" + storedLang;
+        return;
+      }
+
+      if (!storedLang && !isAlreadyLocalized) {
+        const browserLang = navigator.language || navigator.userLanguage;
+        const lang = browserLang.startsWith("ru") ? "ru" : "en";
+
+        localStorage.setItem("preferredLang", lang);
+        window.location.href = "/" + lang;
+      }
+    })();
+  </script>
 </head>
 
 <body>
-
-<section class="projects">
-<div class="container">
-  <h2 class="projects-title">Completed Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/blitzestate.jpg" alt="Haider Chemical Industry">
-      </div>
-      <div class="project-content">
-        <h3>Blitz State</h3>
-        <p>
-          Real estate agency landing page
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/blitzestate/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/carservice.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Car Service</h3>
-        <p>
-          Car service landing page
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/carservice/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-<div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/hoteldolina.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Hotel Dolina</h3>
-        <p>
-          Landing page for a hotel
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/dolinahotel/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/mountainwalking.png" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Mountain Walking</h3>
-        <p>
-          Landing page for ski excursions
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/mountainwalking/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/softerio-tech.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Softerio Technology</h3>
-        <p>
-          Development studio landing page
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/softeriotech/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/strikethehub.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Game Platform</h3>
-        <p>
-          Gaming portal, multi-page website
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>TAILWIND</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/gameplatform/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/sportcarrent.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Sportcar Rent</h3>
-        <p>
-          Sports car rental landing page
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/sportcarrent/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="assets/img/luxurycar.jpg" alt="SHOP.CO">
-      </div>
-      <div class="project-content">
-        <h3>Luxury Car</h3>
-        <p>
-          Car Detailing
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JS</span>
-          <span>WORDPRESS</span>
-        </div>
-        <div class="links">
-          <a href="/apps/luxurycar/" target="_blank">Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
-</section>
-
-  <footer class="footer">
-      <div class="container">
-      <h2>Follow Me!</h2>
-        <div class="socials">
-          <a href="https://github.com/dmitrylean" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.behance.net/dmitrylean" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-          <a href="https://t.me/bionicman451" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-        </div>
-        <p>Copyright ©2020 All rights reserved</p>
-      </div>
-    </footer>
+  <noscript>
+    <p>
+      Please enable JavaScript to be redirected automatically. <br />
+      Or choose your language: <a href="/en">En</a> |
+      <a href="/ru">Ru</a>
+    </p>
+  </noscript>
 </body>
 
 </html>
