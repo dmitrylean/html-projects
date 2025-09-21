@@ -70,10 +70,21 @@
 
     <section class="projects">
       <div class="container">
-        <h2 class="projects-title">Верстка / Wordpress</h2>
+        <h2 class="projects-title">Проекты</h2>
+
+        <!-- Filter buttons -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="wordpress">
+            HTML/Wordpress
+          </button>
+          <button class="filter-btn" data-filter="astro">Astro</button>
+          <button class="filter-btn" data-filter="react">React</button>
+        </div>
+
         <div class="projects-grid">
           <!-- HTML Projects -->
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img
                 src="../assets/img/blitzestate.jpg"
@@ -95,7 +106,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/carservice.jpg" alt="SHOP.CO" />
             </div>
@@ -114,7 +125,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/hoteldolina.jpg" alt="SHOP.CO" />
             </div>
@@ -133,7 +144,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/mountainwalking.png" alt="SHOP.CO" />
             </div>
@@ -152,7 +163,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/softerio-tech.jpg" alt="SHOP.CO" />
             </div>
@@ -171,7 +182,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/strikethehub.jpg" alt="SHOP.CO" />
             </div>
@@ -189,7 +200,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/sportcarrent.jpg" alt="SHOP.CO" />
             </div>
@@ -208,7 +219,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="wordpress">
             <div class="project-image">
               <img src="../assets/img/luxurycar.jpg" alt="SHOP.CO" />
             </div>
@@ -226,16 +237,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="projects">
-      <div class="container">
-        <h2 class="projects-title">Astro</h2>
-        <div class="projects-grid">
           <!-- Astro -->
-          <div class="project-card">
+          <div class="project-card" data-category="astro">
             <div class="project-image">
               <img
                 src="../assets/img/astroblog.jpg"
@@ -259,7 +263,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="astro">
             <div class="project-image">
               <img src="../assets/img/astroblogportfolio.jpg" alt="SHOP.CO" />
             </div>
@@ -280,7 +284,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" data-category="astro">
             <div class="project-image">
               <img src="../assets/img/oldportfolioastro.jpg" alt="SHOP.CO" />
             </div>
@@ -305,16 +309,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="projects">
-      <div class="container">
-        <h2 class="projects-title">React</h2>
-        <div class="projects-grid">
           <!-- React -->
-          <div class="project-card">
+          <div class="project-card" data-category="react">
             <div class="project-image">
               <img
                 src="../assets/img/musicartist.jpg"
@@ -370,6 +367,33 @@
         <p>Copyright ©2020 All rights reserved</p>
       </div>
     </footer>
+    <script>
+      // Get all buttons
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // remove active from all
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+
+          projectCards.forEach((card) => {
+            // Show all
+            if (filter === "all") {
+              card.classList.remove("hide");
+            } else {
+              // Show only selected
+              card.dataset.category === filter
+                ? card.classList.remove("hide")
+                : card.classList.add("hide");
+            }
+          });
+        });
+      });
+    </script>
     <script>
       const openBtn = document.getElementById("openMenu");
       const closeBtn = document.getElementById("closeMenu");

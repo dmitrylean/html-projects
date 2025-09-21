@@ -215,6 +215,35 @@ p {
   color: #00e5ff;
 }
 
+/* === FILTER === */
+
+ .filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .filter-btn {
+    padding: 8px 16px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  .project-card {
+    display: block;
+    transition: 0.3s;
+  }
+  .project-card.hide {
+    display: none;
+  }
+
 /* === SERVICE === */
 
 .services {
