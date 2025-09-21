@@ -1,247 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Details</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxury Details</title>
-</head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">LuxureDetails</div>
 
-<body>
-  <header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">LuxureDetails</div>
+          <button class="burger" id="openMenu" aria-label="Открыть меню">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
 
-        <button class="burger" id="openMenu" aria-label="Открыть меню">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+          <button class="close" id="closeMenu" aria-label="Закрыть меню">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
 
-        <button class="close" id="closeMenu" aria-label="Закрыть меню">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-
-        <ul class="nav-links">
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Цены</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a href="#" class="quote-btn">Получить расценки</a>
-      </nav>
-    </div>
-
-    <div class="overlay" id="overlay"></div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Luxury car detailing</h1>
-        <p>
-          Ощутите престиж профессионально продуманного автомобиля,<br />сияющего элегантностью и изысканностью на каждом
-          шагу.
-        </p>
-        <a href="#" class="connect-btn">Давайте подключимся →</a>
-      </div>
-      <div class="hero-image">
-        <img src="./img/hero_image.png" alt="Luxury Car" />
-      </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="container">
-      <div class="section-header">
-        <h2>Любовь в каждой детали</h2>
-        <p>
-          Погрузитесь в роскошь с нашими индивидуальными пакетами детейлинга,
-          соответствующими уникальным потребностям вашего автомобиля.
-        </p>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <img src="./img/card_1.png" alt="Детализация начального уровня" />
-          <h3>Детализация начального уровня</h3>
-          <p>
-            Побалуйте свой роскошный автомобиль тщательной ручной мойкой и
-            нанесением воска.
-          </p>
-          <a href="#" class="learn-more">Подробнее →</a>
-        </div>
-        <div class="card">
-          <img src="./img/card_2.png" alt="Подробнее о техобслуживании" />
-          <h3>Подробнее о техобслуживании</h3>
-          <p>
-            Обеспечите долговечность вашего автомобиля с помощью периодической
-            защиты кузова.
-          </p>
-          <a href="#" class="learn-more">Подробнее →</a>
-        </div>
-        <div class="card">
-          <img src="./img/card_3.png" alt="Подробнее" />
-          <h3>Подробнее</h3>
-          <p>
-            Побалуйте свой автомобиль комплексным уходом, не упуская ни одной
-            детали.
-          </p>
-          <a href="#" class="learn-more">Подробнее →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="frame">
-    <div class="frame-wrapper">
-      <img src="./img/frame_1.png" alt="frame image" />
-    </div>
-  </section>
-  <section class="features">
-    <div class="container">
-      <div class="features-grid">
-        <div class="left-content">
-          <h2>Мы хорошо<br />позаботимся о вашем автомобиле</h2>
-          <img src="./img/luxury_car.png" alt="Luxury car" />
-        </div>
-        <div class="right-content">
-          <div class="feature-item">
-            <div class="icon">
-              <img src="./img/vector.png" />
-            </div>
-            <div>
-              <h3>Точная работа</h3>
-              <p>
-                Мы придерживаемся высочайших стандартов профессионализма при
-                обслуживании ваших автомобилей.
-              </p>
-            </div>
-          </div>
-          <hr />
-          <div class="feature-item">
-            <div class="icon">
-              <img src="./img/diamond.png" />
-            </div>
-            <div>
-              <h3>Продукты и услуги премиум-класса</h3>
-              <p>
-                Обеспечите долговечность вашего автомобиля, регулярно
-                обрабатывая его кузов защитными составами.
-              </p>
-            </div>
-          </div>
-          <hr />
-          <div class="feature-item">
-            <div class="icon">
-              <img src="./img/security.png" />
-            </div>
-            <div>
-              <h3>Высокий уровень безопасности и конфиденциальности</h3>
-              <p>
-                Мы понимаем важность конфиденциальности и безопасности для
-                наших клиентов.
-              </p>
-            </div>
-          </div>
-          <a href="#" class="quote-link">Получить предложение сейчас →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="cta-section">
-    <div class="cta-container">
-      <div class="cta-text">
-        <h2>Закажите детейлинг своего роскошного автомобиля уже сегодня</h2>
-        <p>
-          Перейдите по ссылке ниже. Заполните данные, и мы свяжемся с вами
-          менее чем через 24 часа.
-        </p>
-        <a href="#" class="cta-btn">Получить расчёт прямо сейчас →</a>
-      </div>
-      <div class="cta-image">
-        <img src="./img/video.png" alt="Luxury car" />
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <h3>LuxureDetails</h3>
-        <p>
-          Ощутите престиж профессионально продуманного автомобиля, излучающего
-          элегантность и изысканность на каждом шагу.
-        </p>
-      </div>
-      <div class="footer-columns">
-        <div>
-          <h4>Веб-сайт</h4>
-          <ul>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">О нас</a></li>
+          <ul class="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
+          <a href="#" class="quote-btn">Get a quote</a>
+        </nav>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Luxury car detailing</h1>
+          <p>
+            Experience the prestige of a professionally detailed car,<br />radiating
+            elegance and refinement at every turn.
+          </p>
+          <a href="#" class="connect-btn">Let’s connect →</a>
         </div>
-        <div>
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="#">Получить предложение</a></li>
-            <li><a href="#">Контактная форма</a></li>
-            <li><a href="#">Написать нам</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Социальные сети</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
-          </ul>
+        <div class="hero-image">
+          <img src="./img/hero_image.png" alt="Luxury Car" />
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <span>LuxureDetails © 2024</span>
-      <div class="footer-links">
-        <a href="#">Политика использования файлов cookie</a>
-        <a href="#">Условия обслуживания</a>
-        <a href="#">Политика конфиденциальности</a>
-        <a
-          href="https://www.figma.com/design/YEuQIpkKqpy4m3olwAtd3v/Luxury-Car-Detailing-Landing-Page--Community-?node-id=2-139&t=D54cmUptUO6p3HvG-1">Design</a>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Love in Every Detail</h2>
+          <p>
+            Immerse yourself in luxury with our bespoke detailing packages
+            tailored to your car's unique needs.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/card_1.png" alt="Детализация начального уровня" />
+            <h3>Entry level detail</h3>
+            <p>
+              Treat your luxury car to a thorough hand wash and wax application.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+          <div class="card">
+            <img src="./img/card_2.png" alt="Подробнее о техобслуживании" />
+            <h3>Maintenance detail</h3>
+            <p>
+              Ensure your car's longevity with a periodic exterior protection
+              treatment.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+          <div class="card">
+            <img src="./img/card_3.png" alt="Подробнее" />
+            <h3>Full detail</h3>
+            <p>
+              Pamper your vehicle with a complete treatment, leaving no detail
+              overlooked.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
+    <section class="frame">
+      <div class="frame-wrapper">
+        <img src="./img/frame_1.png" alt="frame image" />
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="left-content">
+            <h2>We will take good<br />care of your car</h2>
+            <img src="./img/luxury_car.png" alt="Luxury car" />
+          </div>
+          <div class="right-content">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="./img/vector.png" />
+              </div>
+              <div>
+                <h3>Precise work</h3>
+                <p>
+                  We uphold the highest standards of professionalism when
+                  servicing your vehicles.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="feature-item">
+              <div class="icon">
+                <img src="./img/diamond.png" />
+              </div>
+              <div>
+                <h3>Premium Products and Services</h3>
+                <p>
+                  Ensure your car's longevity with a periodic exterior
+                  protection treatment.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="feature-item">
+              <div class="icon">
+                <img src="./img/security.png" />
+              </div>
+              <div>
+                <h3>High-Level Security and Privacy</h3>
+                <p>
+                  We understand the importance of privacy and security for their
+                  our clientele.
+                </p>
+              </div>
+            </div>
+            <a href="#" class="quote-link">Get a quote now →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-text">
+          <h2>Book your luxury car detailing today</h2>
+          <p>
+            Click the link bellow. Fill out the details and we’ll get back to
+            you in less than 24 hours.
+          </p>
+          <a href="#" class="cta-btn">Get a quote now →</a>
+        </div>
+        <div class="cta-image">
+          <img src="./img/video.png" alt="Luxury car" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>LuxureDetails</h3>
+          <p>
+            Experience the prestige of a professionally detailed car, radiating
+            elegance and refinement at every turn.
+          </p>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <h4>Website</h4>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Get a quote</a></li>
+              <li><a href="#">Contact form</a></li>
+              <li><a href="#">Email us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Social Media</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>LuxureDetails © 2024</span>
+        <div class="footer-links">
+          <a href="#">Cookie policy</a>
+          <a href="#">Terms of service</a>
+          <a href="#">Privacy policy</a>
+          <a
+            href="https://www.figma.com/design/YEuQIpkKqpy4m3olwAtd3v/Luxury-Car-Detailing-Landing-Page--Community-?node-id=2-139&t=D54cmUptUO6p3HvG-1"
+            >Design</a
+          >
+        </div>
+      </div>
+    </footer>
     <script>
-  const openBtn = document.getElementById("openMenu");
-const closeBtn = document.getElementById("closeMenu");
-const menu = document.getElementById("menu");
-const overlay = document.getElementById("overlay");
+      const openBtn = document.getElementById("openMenu");
+      const closeBtn = document.getElementById("closeMenu");
+      const menu = document.getElementById("menu");
+      const overlay = document.getElementById("overlay");
 
-openBtn.addEventListener("click", () => {
-  menu.classList.add("active");
-  overlay.style.display = "block";
-});
+      openBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+        overlay.style.display = "block";
+      });
 
-closeBtn.addEventListener("click", () => {
-  menu.classList.remove("active");
-  overlay.style.display = "none";
-});
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+        overlay.style.display = "none";
+      });
 
-overlay.addEventListener("click", () => {
-  menu.classList.remove("active");
-  overlay.style.display = "none";
-});
-  </script>
-</body>
-
+      overlay.addEventListener("click", () => {
+        menu.classList.remove("active");
+        overlay.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
 
 <style>
@@ -805,11 +822,11 @@ overlay.addEventListener("click", () => {
       right: 0;
     }
 
-    .nav-links.active~.close {
+    .nav-links.active ~ .close {
       display: flex;
     }
 
-    .nav-links.active~.burger {
+    .nav-links.active ~ .burger {
       display: none;
     }
 
