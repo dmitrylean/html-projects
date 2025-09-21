@@ -15,19 +15,38 @@
 
 <body>
 <header class="header">
-  <div class="container">
+  <div class="nav-container">
+    <button class="burger" id="openMenu" aria-label="Открыть меню">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <button class="close" id="closeMenu" aria-label="Закрыть меню">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
     <div class="logo">
-    <a href="/">HTML Projects</a>
+      <a href="/">HTML Projects</a>
     </div>
-    <nav class="nav">
+
+    <nav class="nav" id="menu">
       <ul>
         <li><a href="/">Проекты</a></li>
         <li><a href="#">Стоимость</a></li>
         <li><a href="#">Контакт</a></li>
       </ul>
     </nav>
-    <a href="/en/" class="btn">En</a>
+
+    <a href="/en/" class="lang-btn">En</a>
   </div>
+
+  <div class="overlay" id="overlay"></div>
 </header>
 
 <section class="projects">
@@ -42,7 +61,7 @@
       <div class="project-content">
         <h3>Blitz State</h3>
         <p>
-          Real estate agency landing page
+          Лендинг агенства недвижимости
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -63,7 +82,7 @@
       <div class="project-content">
         <h3>Car Service</h3>
         <p>
-          Car service landing page
+          Лендинг автомастерской
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -84,7 +103,7 @@
       <div class="project-content">
         <h3>Hotel Dolina</h3>
         <p>
-          Landing page for a hotel
+          Лендинг отеля
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -105,7 +124,7 @@
       <div class="project-content">
         <h3>Mountain Walking</h3>
         <p>
-          Landing page for ski excursions
+          Лендинг посвященный экскурсиям в горы
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -126,7 +145,7 @@
       <div class="project-content">
         <h3>Softerio Technology</h3>
         <p>
-          Development studio landing page
+          Лендинг студии разработки
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -147,7 +166,7 @@
       <div class="project-content">
         <h3>Game Platform</h3>
         <p>
-          Gaming portal, multi-page website
+          Игровой портал, многостраничный сайт.
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -167,7 +186,7 @@
       <div class="project-content">
         <h3>Sportcar Rent</h3>
         <p>
-          Sports car rental landing page
+          Лендинг по аренде спорткаров
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -188,7 +207,7 @@
       <div class="project-content">
         <h3>Luxury Car</h3>
         <p>
-          Car Detailing
+         Лендинг детайлинг автомобилей
         </p>
         <div class="tags">
           <span>HTML</span>
@@ -223,6 +242,27 @@
         <p>Copyright ©2020 All rights reserved</p>
       </div>
     </footer>
+    <script>
+    const openBtn = document.getElementById('openMenu');
+const closeBtn = document.getElementById('closeMenu');
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+
+openBtn.addEventListener('click', () => {
+  menu.classList.add('active');
+  overlay.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', () => {
+  menu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+    </script>
 </body>
 
 </html>
